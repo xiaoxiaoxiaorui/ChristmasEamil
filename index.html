@@ -3,12 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <title>ChristmasEamil</title>
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <style type="text/css" rel="stylesheet">
+        @font-face {
+            font-family:'FuturaLTBold';src:url('font/futura-lt-extra-bold.eot');src:url('font/futura-lt-extra-bold.eot?#iefix') format('embedded-opentype'),url('font/futura-lt-extra-bold.ttf') format('truetype'),url('font/futura-lt-extra-bold.svg#FuturaLTBold') format('svg');font-weight:normal;font-style:normal
+        }
+        @font-face {
+            font-family:'FuturaLTMedium';src:url('font/futura-lt-medium.eot');src:url('font/futura-lt-medium.eot?#iefix') format('embedded-opentype'),url('font/futura-lt-medium.ttf') format('truetype'),url('font/futura-lt-medium.svg#FuturaLTMedium') format('svg');font-weight:normal;font-style:normal
+        }
+        body{ border: none; margin: 0; padding: 0; font-size: 18px;}
+        *{ list-style: none;}
+        a{ text-decoration: none;}
+        a:hover,a:active,a:focus{ text-decoration: none;}
+        .clear{ clear: both;}
+        .wrap{ width: 960px; height: 750px; background: url("images/bodybg.png") no-repeat; margin: 0 auto;}
+        header{ text-align: center;}
+        .content{ text-align: center; height: 368px; line-height: 368px;}
+        .content ul{ list-style: none; margin: 0; padding: 0; display: inline-block; vertical-align: bottom;}
+        .content ul li{ width: 100px; height: 101px; color: #fff; line-height: 100px; text-align: center; background: url("images/textbg.png") no-repeat; float: left; background-size: 100%; margin: 0 10px;}
+        .content ul li a{ display: inline-block; height: 100px; color: #fff; font-family: FuturaLTMedium; font-size: 25px;}
+        .content ul li a:hover img{ box-shadow: 2px 2px 2px #ccc,-2px -2px 2px #ccc,-2px 2px 2px #ccc,2px -2px 2px #ccc;}
+        .content ul li img{ width: 100px; height: 100px; border-radius: 50%;}
+        .ChrisImg{ line-height: 0; margin-top: 35px;}
+        .ChrisText{ text-align: center; font-family: FuturaLTBold; color: #fff; line-height: 25px; font-size: 14px; margin-bottom: 0;}
+        .minChrisText{ text-align: center; margin: 0; font-family: FuturaLTMedium; color: #fff; line-height: 25px; font-size: 12px;}
+        .Button{ line-height: 0; text-align: center; margin-top: 60px;}
+        .unsubBtn{ margin: 0; padding: 0; border: 0; background: transparent;}
+        .unsubBtn:focus img{ box-shadow: 5px -5px #c7171a;}
+        .unsubBtn:focus{ outline: none;}
+    </style>
 </head>
 <body>
 <div class="wrap">
     <header><img src="images/logo.png" alt="Logo"></header>
+    <div class="content">
+        <ul>
+            <li><a href="javascript:void(0)"><img src="images/goldmin.png" alt="gold"> <!--Gold--></a></li>
+            <li><a href="javascript:void(0)"><img src="images/raidmin.png" alt="raid"> <!--Raid--></a></li>
+            <li><a href="javascript:void(0)"><img src="images/boemin.png" alt="boe"> <!--BOE--></a></li>
+            <li><a href="javascript:void(0)"><img src="images/xmasmin.png" alt="xmas"> <!--Xmas Sale--></a></li>
+            <div class="clear"></div>
+        </ul>
+        <div class="ChrisImg">
+            <img src="images/textimgmin.png" alt="Christmas Day">
+        </div>
+        <p class="ChrisText">Merry Christmas and happy New Year!</p>
+        <p class="minChrisText">We would like to extend our warm wishes for the upcoming holiday season</p>
+        <p class="minChrisText">and wish you and your family a Merry Christmas and a</p>
+        <p class="minChrisText">prosperous New Year.</p>
+        <div class="Button">
+            <button type="button" class="unsubBtn"><a href="javascript:void (0)"><img src="images/unsubBtnmin.png" alt="Unsubscribe"></a></button>
+        </div>
+    </div>
 </div>
-<script src="js/main.js"></script>
 </body>
 </html>
